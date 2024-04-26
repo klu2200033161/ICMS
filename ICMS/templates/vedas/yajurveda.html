@@ -1,0 +1,106 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YajurvaVeda</title>
+    <style>
+         body {
+            text-align: center;
+        }
+        .content-container {
+            display: flex;
+
+        }
+        .text-container {
+            margin-left: 20px; /* Adjust the margin as needed */
+            background-color:#FFFFFF;
+            border-radius:20px;
+            text-align: left;
+        }
+        .text-container:hover{
+              border: 3px solid #0D0E0E ;
+  transition: border-color 0.5s ease;
+        }
+
+         .content-container1 {
+            display: flex;
+            flex-direction:row-reverse;
+        }
+        .text-container1 {
+            margin-right: 20px;
+             background-color:#FFFFFF;
+            border-radius:20px;
+             text-align: left;
+        }
+         .text-container1:hover{
+              border: 3px solid #0D0E0E ;
+  transition: border-color 0.5s ease;
+
+    </style>
+</head>
+<body style="background-color:#924802 ;">
+    {% block body %}
+    <div>
+     <a href="{% url 'vedas' %}" style="text-decoration: none; margin-right:1490px;"> <button type="button" style="border-radius:100px; font-size:20px; background-color:#ffffff; color:#924802;"><</button></a>
+    <marquee><h1 style="color:#ffffff;">YAJUR-VEDA</h1></marquee>
+        <br>
+        </div>
+    <div class="content-container">
+        <img src="{% static 'vedas/yajur1.jpg' %}" alt="kuchipudi" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container">
+            <h3><br>
+->The Yajur Veda is one of the four Vedas of Hinduism, along with the Rig Veda, Sama Veda, and Atharva Veda. It is considered one of the oldest and most important sacred texts in Hinduism.<br><br>
+->The Yajur Veda primarily deals with the performance of rituals and sacrifices (yajnas) prescribed in ancient Hindu religious practices. It contains detailed instructions, hymns, and mantras used by priests during various ceremonies.<br><br>
+->The Yajur Veda is traditionally divided into two main versions: the Krishna (Black) Yajur Veda and the Shukla (White) Yajur Veda. The Krishna Yajur Veda is known for its prose format, while the Shukla Yajur Veda incorporates both prose and poetry.<br><br>
+->The Yajur Veda consists of two primary sections: the Samhita and the Brahmanas. The Samhita contains the collection of hymns and verses used in rituals, while the Brahmanas provide explanations, rituals, and philosophical interpretations associated with the rituals.<br><br>
+->The Yajur Veda contains a wide range of mantras and prayers used in different ceremonies, including fire sacrifices, rites of passage (such as weddings and funerals), and rituals for prosperity and well-being.<br><br>
+-> The Yajur Veda contains a wide range of mantras and prayers used in different ceremonies, including fire sacrifices, rites of passage (such as weddings and funerals), and rituals for prosperity and well-being.<br><br>
+
+        </h3></div>
+    </div>
+
+<br><br>
+
+     <div class="content-container1">
+        <img src="{% static 'vedas/yajur2.jpg' %}" alt="kuchipudi2" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container1">
+            <p style="font-size:18px"><b>1.Origin:</b><br><br>
+
+The Yajur Veda, like the other Vedas, is considered to be of divine origin in Hindu tradition. It is believed to have been revealed to sages or seers (rishis) during deep meditation, and then transmitted orally through generations of Brahmin priests.<br><br>
+<b>2.Content:</b><br><br>
+
+ The Yajur Veda primarily consists of hymns, prose mantras, and ritual instructions used by priests during Vedic rituals and ceremonies. It focuses extensively on the performance of rituals and sacrificial ceremonies (yajnas).<br><br>
+                <b>3.Two Main Versions: </b><br><br>
+
+The Yajur Veda is traditionally divided into two main versions: the Krishna (Black) Yajur Veda and the Shukla (White) Yajur Veda. The Krishna Yajur Veda is associated with the Taittiriya Shakha (branch), while the Shukla Yajur Veda is associated with the Vajasaneyi Shakha.<br><br>
+<b>4.Scriptural Format:</b><br><br>
+
+The Krishna Yajur Veda is predominantly in prose form, containing detailed ritual procedures and instructions. The Shukla Yajur Veda, on the other hand, combines both prose and poetry, including verses interspersed with prose passages.<br><br>
+</p>
+        </div>
+    </div>
+<br>
+
+    <div class="content-container" >
+        <img src="{% static 'vedas/yajur3.jpeg' %}" alt="kuchipudi2" style="width:800px; height:400px;border:2px solid #FFFFFF;">
+        <div class="text-container" style="text-align:left">
+            <p style="font-size:18px">
+<b>5.Mantras and Rituals:</b><br><br>
+
+The Yajur Veda contains numerous mantras and prayers used by priests during various rituals, including fire sacrifices, ceremonies for seasonal transitions, rites of passage (such as weddings and funerals), and rituals for prosperity and well-being.
+
+<br>
+<br><b>6.Brahmanas and Aranyakas:</b><br><br>
+
+ In addition to the Samhita (collection of hymns), the Yajur Veda includes Brahmanas and Aranyakas. Brahmanas provide explanations and interpretations of the rituals, while Aranyakas focus on rituals performed in forest retreats and contain philosophical teachings.<br><br>
+<b>7.Philosophical Insights:</b><br><br>
+
+ Alongside its emphasis on rituals, the Yajur Veda also contains philosophical insights and moral teachings. It addresses fundamental questions about the nature of existence, the relationship between humans and the divine, and the principles of dharma (righteousness) and karma (action).<br><br>
+<b>8.Transmission:</b><br><br>
+
+ Like other Vedas, the Yajur Veda was traditionally transmitted orally from generation to generation by Brahmin priests. The oral tradition of reciting and memorizing the Vedic texts ensured their preservation over thousands of years before they were eventually recorded in written form.</p>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

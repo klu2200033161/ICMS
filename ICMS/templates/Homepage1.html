@@ -1,0 +1,103 @@
+{% extends 'Navbar1.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+{% block body %}
+<div>
+<br>
+     <div class="card">
+              <div class="card">
+            <div class="card-body" style="background-color:#924802; color:#F8F9F9;">
+                <h5 class="card-title">INDIAN CULTURE OVERVIEW</h5>
+                <!-- Use the locally hosted video file -->
+                <video autoplay muted loop playsinline width="100%">
+                    <!-- Update the source path to your local video file -->
+                    <source src="{% static 'video/india.mp4' %}" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+         <script>
+    document.getElementById('backgroundVideo').playbackRate = 3;
+</script>
+<div class="card-group">
+
+  <div class="card">
+      <a href="{% url 'classicaldances' %}" style="text-decoration: none;">
+    <img src="{% static 'images/classicald.jpeg' %}" class="card-img-top" alt="..." height="300px">
+
+    <div class="card-body" style="background-color:#924802; color:#F8F9F9;">
+      <h5 class="card-title">CLASSICAL DANCES</h5>
+      <p class="card-text">Classical dances in India, such as Bharatanatyam and Kathak, are ancient art forms characterized by intricate movements, expressive gestures, and cultural storytelling, representing a vibrant and integral part of India's heritage and tradition.</p>
+    </div>
+      </a>
+  </div>
+
+    &nbsp;
+ <div class="card">
+     <a href="{% url 'vedas' %}" style="text-decoration: none;">
+    <img src="{% static 'images/vedas.jpg' %}" class="card-img-top" alt="..." height="300px" >
+     <div class="card-body" style="background-color:#924802; color:#F8F9F9;">
+      <h5 class="card-title">VEDAS</h5>
+      <p class="card-text">
+The Vedas, ancient Indian scriptures in Sanskrit, are foundational texts in Hinduism, encompassing hymns, rituals, and profound philosophical teachings. They provide insights into spirituality and cosmic order.</p>
+    </div>
+     </a>
+  </div>
+    &nbsp;
+  <div class="card">
+      <a href="{% url 'religions' %}" style="text-decoration: none;">
+    <img src="{% static 'images/religion.jpeg' %}" class="card-img-top" alt="..." height="300px" >
+     <div class="card-body" style="background-color:#924802; color:#F8F9F9;">
+      <h5 class="card-title">RELIGIOUS PRACTICES</h5>
+      <p class="card-text">Hinduism, Islam, Christianity, Sikhism, Buddhism, and Jainism are major religions. Practices include prayer, meditation, and visiting temples, mosques, churches, gurudwaras, and other places of worship.</p>
+    </div>
+  </div>
+ </a>
+</div>
+    &nbsp;
+<br>
+&nbsp;
+<div class="card-group">
+
+  <div class="card">
+      <a href="{% url 'language' %}" style="text-decoration: none;">
+    <img src="{% static 'images/language.png' %}" class="card-img-top" alt="..." height="323x">
+     <div class="card-body" style="background-color:#924802; color:#F8F9F9;">
+      <h5 class="card-title">LANGUAGE DIVERSITY</h5>
+      <p class="card-text">Hindi is widely spoken, but there are 21 officially recognized languages. English is also extensively used in business and education. Each state often has its own language.</p>
+    </div>
+   </a>
+  </div>
+    &nbsp;
+  <div class="card">
+   <a href="{% url 'festivals' %}" style="text-decoration: none;">
+    <img src="{% static 'images/tradition1.jpg' %}" class="card-img-top" alt="..." height="300px" >
+     <div class="card-body" style="background-color:#924802; color:#F8F9F9;">
+      <h5 class="card-title">FESTIVALS</h5>
+      <p class="card-text">
+India has many festivals that bring people together in colorful celebrations, showcasing the country's diverse cultures and religious traditions. From Diwali's lights to Holi's colors, these events foster a sense of joy and unity.</p>
+    </div>
+   </a>
+  </div>
+    &nbsp;
+<div class="card">
+<a href="{% url 'foods' %}" style="text-decoration: none;">
+    <img src="{% static 'images/foods.jpg' %}" class="card-img-top" alt="..." height="300px" >
+     <div class="card-body" style="background-color:#924802; color:#F8F9F9;">
+      <h5 class="card-title">FOODS & CULTURE</h5>
+      <p class="card-text">Indian food is famous for its tasty and varied dishes, including flavorful curries and sweets like gulab jamun, showcasing the diverse and culturally influenced culinary landscape of the country.</p>
+    </div>
+</a>
+  </div>
+    &nbsp;
+</div>
+</div>
+    <footer><p style="margin-left:600px;"><b>©2024 Our Website. All rights reserved.</b><span style="margin-left:500px;"><a href="{% url 'contactmail1' %}" style="text-decoration:none;background-color:#924802;color:#ffffff">FEEDBACK</a></span></p></footer>
+{% endblock %}
+</body>
+</html>
